@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System | Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/homePage.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar (White Background, Dark Text) -->
+    <!-- Navigation Bar (Blue Background, White Text) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background-color: #0d6efd;">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>SMS Portal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/student.html">Students</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/course.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/instructor.html">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/book.html">Books</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <!-- Login button white with blue text -->
+                        <a class="btn btn-light text-primary fw-semibold px-4 rounded-pill" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section d-flex align-items-center position-relative">
+        <!-- Background Shapes (Optional, for the blob effect) -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+
+        <div class="container position-relative z-1">
+            <div class="row align-items-center min-vh-100 pt-5 mt-4">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <!-- Main Heading with colored text -->
+                    <h1 class="display-3 fw-bold mb-3 animate-fade-in" style="line-height: 1.2; color: #0a1a3a;">
+                        Manage Your <br>
+                        <span class="text-primary">Students</span> <br>
+                        Smarter & Faster
+                    </h1>
+                    <p class="lead text-secondary mb-4 animate-fade-in pe-lg-5" style="font-size: 1.1rem;">
+                        A comprehensive solution for educational institutes to manage students, courses, instructors,
+                        and more efficiently.
+                    </p>
+
+                    <!-- Buttons with Icons -->
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start mb-5">
+                        <a href="#" class="btn btn-primary btn-lg px-4 rounded-pill shadow custom-btn">
+                            <i class="fas fa-rocket me-2"></i>Get Started <i class="fas fa-arrow-right ms-2 fs-6"></i>
+                        </a>
+                        <a href="#features" class="btn btn-outline-primary btn-lg px-4 rounded-pill custom-btn-outline">
+                            <i class="fas fa-play-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+
+                    <!-- Bottom Features Strip (Icons) -->
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-4 mt-4 feature-strip">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-users text-primary fs-4"></i>
+                            <span class="fw-semibold text-dark" style="font-size: 0.9rem;">Manage<br>Students</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-book-open text-primary fs-4"></i>
+                            <span class="fw-semibold text-dark" style="font-size: 0.9rem;">Track<br>Courses</span>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-chart-line text-primary fs-4"></i>
+                            <span class="fw-semibold text-dark" style="font-size: 0.9rem;">Monitor<br>Progress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="col-lg-6 d-none d-lg-block text-center position-relative">
+                    <!-- Floating icons (Decorative) -->
+                    <div class="floating-icon icon-1 shadow"><i class="fas fa-user-graduate text-white fs-4"></i></div>
+                    <div class="floating-icon icon-2 shadow"><i class="fas fa-chart-bar text-primary fs-4"></i></div>
+
+                    <img src="/assets/images/Student Management Dashboard Workspace.png" alt="Dashboard Illustration"
+                        class="img-fluid hero-img animate-float">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section (Cards) -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Our Modules</h2>
+                <p class="text-muted">Everything you need to run your institute smoothly.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1: Students -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm feature-card text-center p-4">
+                        <div class="icon-box bg-primary-subtle text-primary mb-3">
+                            <i class="fas fa-user-graduate fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Students</h5>
+                        <p class="text-muted small">Manage student details, profiles, and academic records.</p>
+                        <a href="/student.html" class="btn btn-sm btn-outline-primary mt-auto">View Students</a>
+                    </div>
+                </div>
+                <!-- Card 2: Courses -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm feature-card text-center p-4">
+                        <div class="icon-box bg-success-subtle text-success mb-3">
+                            <i class="fas fa-book-open fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Courses</h5>
+                        <p class="text-muted small">Add and manage course modules and curriculum details.</p>
+                        <a href="/course.html" class="btn btn-sm btn-outline-success mt-auto">View Courses</a>
+                    </div>
+                </div>
+                <!-- Card 3: Instructors -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm feature-card text-center p-4">
+                        <div class="icon-box bg-warning-subtle text-warning mb-3">
+                            <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Instructors</h5>
+                        <p class="text-muted small">Keep track of teaching staff and their assignments.</p>
+                        <a href="/instructor.html" class="btn btn-sm btn-outline-warning mt-auto">View Instructors</a>
+                    </div>
+                </div>
+                <!-- Card 4: Books -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm feature-card text-center p-4">
+                        <div class="icon-box bg-danger-subtle text-danger mb-3">
+                            <i class="fas fa-book fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Library</h5>
+                        <p class="text-muted small">Manage books, inventory, and lending records.</p>
+                        <a href="/book.html" class="btn btn-sm btn-outline-danger mt-auto">View Books</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer (Compact Version) -->
+    <footer class="footer-section text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row gy-3">
+
+                <!-- Column 1: Brand & About -->
+                <div class="col-lg-5 col-md-12">
+                    <a class="navbar-brand fw-bold text-white d-flex align-items-center mb-2" href="#">
+                        <i class="fas fa-graduation-cap me-2 text-primary fs-5"></i>
+                        <span>SMS Portal</span>
+                    </a>
+                    <p class="text-light opacity-75 small mb-2 pe-lg-4">
+                        A comprehensive solution for educational institutes to manage students, courses, instructors,
+                        and books efficiently.
+                    </p>
+                    <!-- Social Media Icons -->
+                    <div class="d-flex gap-2 mt-2 social-icons">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-2 text-white">Quick Links</h6>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="#" class="text-light opacity-75 text-decoration-none"><i
+                                    class="fas fa-angle-right me-1 fs-6"></i>Home</a></li>
+                        <li><a href="#features" class="text-light opacity-75 text-decoration-none"><i
+                                    class="fas fa-angle-right me-1 fs-6"></i>Features</a></li>
+                        <li><a href="#" class="text-light opacity-75 text-decoration-none"><i
+                                    class="fas fa-angle-right me-1 fs-6"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold mb-2 text-white">Contact Us</h6>
+                    <ul class="list-unstyled text-light opacity-75 small mb-0">
+                        <li class="mb-1"><i class="fas fa-map-marker-alt me-2 text-primary"></i>123 Education Lane,
+                            Colombo</li>
+                        <li class="mb-1"><i class="fas fa-phone-alt me-2 text-primary"></i>+94 11 234 5678</li>
+                        <li><i class="fas fa-envelope me-2 text-primary"></i>info@smsportal.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-3">
+
+            <!-- Copyright Section -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0 small text-light opacity-75">&copy; 2024 SMS Portal. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <small class="text-light opacity-75">Designed with <i
+                            class="fas fa-heart text-danger animate-heartbeat"></i> for Spring Boot</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
