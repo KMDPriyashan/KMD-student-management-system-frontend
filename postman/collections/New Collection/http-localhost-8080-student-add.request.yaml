@@ -1,0 +1,23 @@
+$kind: http-request
+name: http://localhost:8080/student/add
+description: ""
+url: http://localhost:8080/student/add
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"fullName\": \"Dulash Priyashan\",\r
+
+    \    \"address\": \"Gampaha\",\r
+
+    \    \"dateOfBirth\": \"2001-05-19\",\r
+
+    \    \"gender\": \"Male\",\r
+
+    \    \"phoneNumber\": \"0724719902\",\r
+
+    \    \"nic\": \"200114002793\"\r
+
+    }"
+order: 1000
